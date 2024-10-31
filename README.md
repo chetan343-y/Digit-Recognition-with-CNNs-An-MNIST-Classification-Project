@@ -3,7 +3,9 @@
 2.**Model Architecture:**
 
 a.**Convolution Layer:** Detects features like edges and patterns in the images by applying a set of filters (kernels) over the image.
+
 b.**Max Pooling Layer:** Reduces the spatial dimensions, which helps in lowering computational cost and making the model invariant to small shifts.
+
 c.**Fully Connected Layers:** Flattened outputs from the convolutional layers are fed into dense layers to perform the final classification, with a softmax layer for multi-class output (digits 0–9).
 
 3.**Training and Evaluation:** The model is trained with the sparse_categorical_crossentropy loss function and adam optimizer, and evaluated on the test set to determine accuracy.
